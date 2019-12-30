@@ -1,6 +1,15 @@
 Installation R Language
 ===
 
+## インストールするにあたって
+
+* Rのインストール
+  * ゲストOSのubuntuに直接インストール
+  * (余裕ができたらdockerで)
+* RのIDEであるR stucioのインストール
+  * ホストOSのmacにダウンロード&インストール
+    * と思ったらできなかったからゲストOSに入れる
+
 ## Rのインストールコマンド
 
 ```
@@ -14,7 +23,10 @@ $ sudo apt update
 $ sudo apt install r-base
 ```
 
-## インストールするにあたって
+## R studioのインストール
+
+* ダウンロードサイト
+  * https://rstudio.com/products/rstudio/download/#download
 
 ## 参考サイト
 
