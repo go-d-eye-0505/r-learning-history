@@ -3,7 +3,19 @@ Installation R Language
 
 ## Rのインストールコマンド
 
+```
+$ echo -e "\n## For R package"  | sudo tee -a /etc/apt/sources.list
+$ echo "deb https://cran.rstudio.com/bin/linux/ubuntu $(lsb_release -cs)-cran35/" | sudo tee -a /etc/apt/sources.list
+$ deb https://cran.rstudio.com/bin/linux/ubuntu bionic-cran35/
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+$ gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+$ gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | sudo apt-key add -
+$ sudo apt update
+$ sudo apt install r-base
+```
+
 ## インストールするにあたって
+
 ## 参考サイト
 
 * CRAN
